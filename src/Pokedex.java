@@ -10,11 +10,15 @@ import java.util.Scanner;
 public class Pokedex {
     private static Pokemon resumenPokemon = null;
 
-    private static String habilidadElegida = ""; // Agregado para acceder en todo el programa
-    private static String movimientoElegido = ""; // Agregado para acceder en todo el programa
+    private static String habilidadElegida = "";
+    private static String movimientoElegido = "";
 
     private static final Scanner scanner = new Scanner(System.in);
     private static final PokeApiService apiService = new PokeApiService();
+    private Sprites sprites;
+
+    public Sprites getSprites() { return sprites; }
+    public void setSprites(Sprites sprites) { this.sprites = sprites; }
 
     public static void main(String[] args) {
         int opcion;
@@ -68,6 +72,9 @@ public class Pokedex {
             for (PokemonTypeSlot slot : pokemon.getTypes()) {
                 System.out.print(slot.getType().getName() + " ");
             }
+
+            System.out.println("\nImagen: " + pokemon.getSprites().getFront_default());
+
             System.out.println("\nHabilidades:");
             for (int i = 0; i < pokemon.getAbilities().size(); i++) {
                 System.out.println((i + 1) + ". " + pokemon.getAbilities().get(i).getAbility().getName());
@@ -83,11 +90,11 @@ public class Pokedex {
 
             System.out.print("Elige una habilidad por número: ");
             int habIndex = Integer.parseInt(scanner.nextLine()) - 1;
-            habilidadElegida = pokemon.getAbilities().get(habIndex).getAbility().getName();  // Guardar la habilidad elegida
+            habilidadElegida = pokemon.getAbilities().get(habIndex).getAbility().getName();
 
             System.out.print("Elige un movimiento por número: ");
             int movIndex = Integer.parseInt(scanner.nextLine()) - 1;
-            movimientoElegido = pokemon.getMoves().get(movIndex).getMove().getName();  // Guardar el movimiento elegido
+            movimientoElegido = pokemon.getMoves().get(movIndex).getMove().getName();
 
             resumenPokemon = pokemon;
             System.out.println("\n📌 RESUMEN DEL POKÉMON:");
@@ -174,8 +181,8 @@ public class Pokedex {
                 pokemonElegidos.add(new PokemonElegido(
                         resumenPokemon.getName(),
                         List.of(resumenPokemon.getTypes().get(0).getType().getName()),
-                        habilidadElegida,      // ✅ usar variable real
-                        movimientoElegido      // ✅ usar variable real
+                        habilidadElegida,
+                        movimientoElegido
                 ));
                 JsonService.savePokemonElegidos(pokemonElegidos);
             }
@@ -189,7 +196,6 @@ public class Pokedex {
             System.out.println("Error al guardar los datos: " + e.getMessage());
         }
     }
-
 
     private static void cargarDatos() {
         try {

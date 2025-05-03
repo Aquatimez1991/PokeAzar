@@ -8,14 +8,14 @@ public class PokemonElegido {
     private List<String> tipo;
     private String habilidad;
     private String movimiento;
-    private String imagenAscii;
+
 
     public PokemonElegido(String nombre, List<String> tipo, String habilidad, String movimiento) {
         this.nombre = nombre;
         this.tipo = tipo;
         this.habilidad = habilidad;
         this.movimiento = movimiento;
-        this.imagenAscii = imagenAscii;
+
     }
 
     public String getNombre() {
@@ -50,11 +50,4 @@ public class PokemonElegido {
         this.movimiento = movimiento;
     }
 
-    public String getImagenAscii() {
-        return imagenAscii;
-    }
-
-    public void setImagenAscii(String imagenAscii) {
-        this.imagenAscii = imagenAscii;
-    }
 }
