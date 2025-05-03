@@ -1,0 +1,18 @@
+[
+  {
+    "nombre": "turtwig",
+    "tipo": [
+      "grass"
+    ],
+    "habilidad": "HabilidadEjemplo",
+    "movimiento": "MovimientoEjemplo"
+  },
+  {
+    "nombre": "chespin",
+    "tipo": [
+      "grass"
+    ],
+    "habilidad": "overgrow",
+    "movimiento": "thunder-punch"
+  }
+]

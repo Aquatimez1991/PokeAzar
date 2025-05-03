@@ -1,0 +1,98 @@
+[
+  {
+    "pokemonUsuario": "lurantis-totem",
+    "pokemonOponente": "castform-rainy",
+    "resultado": "¡Ganaste la batalla!",
+    "fecha": "May 3, 2025, 12:15:51 AM"
+  },
+  {
+    "pokemonUsuario": "turtwig",
+    "pokemonOponente": "ninetales",
+    "resultado": "Perdiste la batalla...",
+    "fecha": "May 3, 2025, 12:16:33 AM"
+  },
+  {
+    "pokemonUsuario": "turtwig",
+    "pokemonOponente": "Rival",
+    "resultado": "Ganaste",
+    "fecha": "May 3, 2025, 12:17:00 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "meowth",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:29:46 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "magby",
+    "resultado": "Perdiste la batalla...",
+    "fecha": "May 3, 2025, 12:29:51 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "Rival",
+    "resultado": "Ganaste",
+    "fecha": "May 3, 2025, 12:30:08 AM"
+  },
+  {
+    "pokemonUsuario": "tadbulb",
+    "pokemonOponente": "litten",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:33:34 AM"
+  },
+  {
+    "pokemonUsuario": "bellossom",
+    "pokemonOponente": "mankey",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:44:09 AM"
+  },
+  {
+    "pokemonUsuario": "bellossom",
+    "pokemonOponente": "conkeldurr",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:44:26 AM"
+  },
+  {
+    "pokemonUsuario": "bellossom",
+    "pokemonOponente": "dragonair",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:44:30 AM"
+  },
+  {
+    "pokemonUsuario": "bellossom",
+    "pokemonOponente": "luxio",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:44:33 AM"
+  },
+  {
+    "pokemonUsuario": "bellossom",
+    "pokemonOponente": "delcatty",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:44:39 AM"
+  },
+  {
+    "pokemonUsuario": "serperior",
+    "pokemonOponente": "dudunsparce-two-segment",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:45:01 AM"
+  },
+  {
+    "pokemonUsuario": "serperior",
+    "pokemonOponente": "type-null",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:45:12 AM"
+  },
+  {
+    "pokemonUsuario": "serperior",
+    "pokemonOponente": "crocalor",
+    "resultado": "Perdiste la batalla...",
+    "fecha": "May 3, 2025, 12:45:17 AM"
+  },
+  {
+    "pokemonUsuario": "rotom-heat",
+    "pokemonOponente": "electrike",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:54:26 AM"
+  }
+]
