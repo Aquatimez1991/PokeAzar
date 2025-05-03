@@ -24,7 +24,10 @@ public class Pokedex {
         int opcion;
 
         do {
-            System.out.println("\n📋 Menú Principal");
+
+            System.out.println("**********************************");
+
+            System.out.println("📋 Menú Principal");
             System.out.println("1. Elegir un tipo de Pokémon");
             System.out.println("2. Liga Pokémon");
             System.out.println("3. Ver Pokémon elegidos");
@@ -32,6 +35,9 @@ public class Pokedex {
             System.out.println("5. Guardar Pokémon y batallas");
             System.out.println("6. Cargar Pokémon y batallas");
             System.out.println("7. Salir");
+
+            System.out.println("**********************************");
+
             System.out.print("Selecciona una opción: ");
             opcion = Integer.parseInt(scanner.nextLine());
 
@@ -66,7 +72,8 @@ public class Pokedex {
 
         try {
             Pokemon pokemon = apiService.getRandomPokemonByType(apiType);
-            System.out.println("\n🔎 Pokémon encontrado:");
+            System.out.println("**********************************");
+            System.out.println("🔎 Pokémon encontrado:");
             System.out.println("Nombre: " + pokemon.getName());
             System.out.print("Tipo: ");
             for (PokemonTypeSlot slot : pokemon.getTypes()) {
@@ -74,6 +81,8 @@ public class Pokedex {
             }
 
             System.out.println("\nImagen: " + pokemon.getSprites().getFront_default());
+
+            System.out.println("**********************************");
 
             System.out.println("\nHabilidades:");
             for (int i = 0; i < pokemon.getAbilities().size(); i++) {
@@ -84,7 +93,7 @@ public class Pokedex {
             for (int i = 0; i < Math.min(pokemon.getMoves().size(), 10); i++) {
                 System.out.println((i + 1) + ". " + pokemon.getMoves().get(i).getMove().getName());
             }
-
+            System.out.println("**********************************");
             System.out.println("\nImagen del Pokémon en ASCII:");
             ImageToAscii.printImageAsAscii(pokemon.getSprites().getFront_default(), 30, 10);
 
