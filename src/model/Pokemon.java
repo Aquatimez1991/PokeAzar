@@ -6,6 +6,8 @@ public class Pokemon {
     private int id;
     private String name;
     private List<PokemonTypeSlot> types;
+    private List<PokemonAbilitySlot> abilities;
+    private List<PokemonMoveSlot> moves;
 
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
@@ -20,5 +22,11 @@ public class Pokemon {
 
     public Sprites getSprites() { return sprites; }
     public void setSprites(Sprites sprites) { this.sprites = sprites; }
+    public List<PokemonAbilitySlot> getAbilities() {
+        return abilities;
+    }
 
+    public List<PokemonMoveSlot> getMoves() {
+        return moves;
+    }
 }

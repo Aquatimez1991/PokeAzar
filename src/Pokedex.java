@@ -1,5 +1,4 @@
-import model.Pokemon;
-import model.PokemonTypeSlot;
+import model.*;
 import service.PokeApiService;
 import util.TypeMapper;
 import util.ImageToAscii;
@@ -24,13 +23,34 @@ public class Pokedex {
             Pokemon pokemon = apiService.getRandomPokemonByType(apiType);
             System.out.println("\n🔎 Pokémon encontrado:");
             System.out.println("Nombre: " + pokemon.getName());
+
+            // TIPOS
             System.out.print("Tipo: ");
             for (PokemonTypeSlot slot : pokemon.getTypes()) {
                 System.out.print(slot.getType().getName() + " ");
             }
+
+            // URL DE IMAGEN
             System.out.println("\nImagen: " + pokemon.getSprites().getFront_default());
+
+            // ASCII
             System.out.println("\nImagen del Pokémon en ASCII:");
             ImageToAscii.printImageAsAscii(pokemon.getSprites().getFront_default(), 30, 10);
+
+            // HABILIDADES
+            System.out.println("\nHabilidades:");
+            for (PokemonAbilitySlot abilitySlot : pokemon.getAbilities()) {
+                System.out.println("- " + abilitySlot.getAbility().getName());
+            }
+
+            // MOVIMIENTOS (mostrar solo 5 primeros)
+            System.out.println("\nMovimientos:");
+            int count = 0;
+            for (PokemonMoveSlot moveSlot : pokemon.getMoves()) {
+                System.out.println("- " + moveSlot.getMove().getName());
+                if (++count == 5) break;
+            }
+
         } catch (IOException e) {
             System.out.println("Error al conectar con la PokéAPI: " + e.getMessage());
         }
