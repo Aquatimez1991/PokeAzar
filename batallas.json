@@ -1,0 +1,38 @@
+[
+  {
+    "pokemonUsuario": "lurantis-totem",
+    "pokemonOponente": "castform-rainy",
+    "resultado": "¡Ganaste la batalla!",
+    "fecha": "May 3, 2025, 12:15:51 AM"
+  },
+  {
+    "pokemonUsuario": "turtwig",
+    "pokemonOponente": "ninetales",
+    "resultado": "Perdiste la batalla...",
+    "fecha": "May 3, 2025, 12:16:33 AM"
+  },
+  {
+    "pokemonUsuario": "turtwig",
+    "pokemonOponente": "Rival",
+    "resultado": "Ganaste",
+    "fecha": "May 3, 2025, 12:17:00 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "meowth",
+    "resultado": "Empate. Ambos Pokémon están equilibrados.",
+    "fecha": "May 3, 2025, 12:29:46 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "magby",
+    "resultado": "Perdiste la batalla...",
+    "fecha": "May 3, 2025, 12:29:51 AM"
+  },
+  {
+    "pokemonUsuario": "chespin",
+    "pokemonOponente": "Rival",
+    "resultado": "Ganaste",
+    "fecha": "May 3, 2025, 12:30:08 AM"
+  }
+]
